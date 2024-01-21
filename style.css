@@ -17,6 +17,23 @@ body {
     padding: 10px;
     margin-bottom: 10px;
     box-sizing: border-box;
+    transition: border-color 0.2s ease, box-shadow 0.2s ease; 
+    border: 1px solid #ccc;
+    border-radius: 4px; 
+}
+
+#new-task:hover {
+    border-color: #007bff;
+    box-shadow: 0 0 8px rgba(0,123,255,0.2); 
+}
+
+#new-task::placeholder {
+    transition: color 0.2s ease; 
+    color: #aaa;
+}
+
+#new-task:hover::placeholder {
+    color: #007bff;
 }
 
 #add-task-btn {
