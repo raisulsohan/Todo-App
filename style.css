@@ -1,0 +1,80 @@
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+}
+
+.todo-container {
+    background: #fff;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    padding: 20px;
+    width: 300px;
+}
+
+#new-task {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    box-sizing: border-box;
+}
+
+#add-task-btn {
+    width: 100%;
+    padding: 10px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    cursor: pointer;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+#add-task-btn:hover {
+    background-color: #0056b3;
+    transform: scale(1.05);
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+}
+
+.task-item {
+    background: #f9f9f9;
+    margin-top: 10px;
+    padding: 10px;
+    border-radius: 5px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    cursor: grab;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.task-item:hover {
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+}
+
+.task-item .remove-task {
+    color: red;
+    cursor: pointer;
+    transition: transform 0.2s;
+    font-weight: bold;
+    font-size: 1.2em;
+    padding: 4px;
+    margin-left: 10px;
+}
+
+.task-item .remove-task:hover {
+    transform: scale(1.2);
+}
+
+.task-item.dragging {
+    opacity: 0.5;
+    background-color: #ccc;
+    cursor: grabbing;
+}
+
+.task-item:not(.dragging):hover {
+    transform: scale(1.03);
+}
+
+.hide {
+    display: none;
+}
