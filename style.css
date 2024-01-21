@@ -9,7 +9,7 @@ body {
     background: #fff;
     box-shadow: 0 0 10px rgba(0,0,0,0.1);
     padding: 20px;
-    width: 300px;
+    width: 400px;
 }
 
 #new-task {
@@ -77,4 +77,12 @@ body {
 
 .hide {
     display: none;
+}
+
+.app-title {
+    text-align: center;
+    color: #333;
+    margin-bottom: 20px;
+    font-size: 24px;
+    font-weight: normal;
 }
