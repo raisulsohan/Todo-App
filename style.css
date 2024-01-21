@@ -24,7 +24,9 @@ body {
 
 #new-task:hover {
     border-color: #007bff;
-    box-shadow: 0 0 8px rgba(0,123,255,0.2); 
+    box-shadow: 0 0 8px rgba(0,123,255,0.2);
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+    transform: scale(1.05);
 }
 
 #new-task::placeholder {
